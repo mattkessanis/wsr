@@ -6,6 +6,60 @@ body, html {
     height: 100%;
 }
 
+/*-webkit-
+-moz-
+-o-
+-ms-*/
+
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+.margin-zeros {
+    margin: 0;
+}
+
+.center-me {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.giphy {
+    background-color: #333;
+    margin: 0 auto;
+    max-width: 300px;
+
+}
 
 .hero-image {
     background-color: #333;
@@ -62,7 +116,8 @@ li.active:hover {
   border: 0;
   border-radius: 0;
   padding: 10px;
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
 
 }
@@ -95,7 +150,7 @@ li.active:hover {
 }
 
 .site-by-kewal {
-  padding: 20px 10px 20px 10px;
+  padding: 20px 0 20px 0;
   float: right;
   font-weight: 300;
 

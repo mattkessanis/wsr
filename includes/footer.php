@@ -6,7 +6,7 @@
 
 
 
-  <div class="row">
+  <div class="row margin-zeros">
     <div class="col-sm-6">
 
       <div class="social-footer">
@@ -19,7 +19,7 @@
     </div>
     <div class="col-sm-6">
       <p class="text-right site-by-kewal">
-        Western Sydney Racing &copy; 2017 | Website by Kewal.
+        Western Sydney Racing &copy; 2017 | Site by Kewal.
       </p>
     </div>
   </div>
@@ -39,5 +39,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
