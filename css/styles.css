@@ -1,0 +1,118 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+.hero-image {
+    background-color: #333;
+    background-image: url("../assets/images/hero.jpg");
+    height: 80%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+li.active {
+  border-bottom: 2px solid #991633;
+  background-color:  transparent;
+}
+
+li.active:hover {
+  border-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: transparent;
+}
+
+
+.nav.navbar-nav.navbar-right li a {
+    border-top: 2px solid transparent;
+    color: #f7f7f7;
+    font-weight: 200;
+    letter-spacing: 0;
+    background-color: transparent;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+  border-bottom: 2px solid #991633;
+}
+
+
+.navbar-inverse .navbar-text {
+    color: #f7f7f7;
+    font-weight: 200;
+
+}
+
+.navbar-brand {
+  padding: 8px 5px 8px 8px;
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0.7);
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+
+}
+
+
+.logo {
+  height: 30px;
+}
+
+.zero-mp {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons-footer {
+  margin: 0 10px 0 10px;
+  height: 28px;
+}
+.social-footer {
+  max-width: 270px;
+
+  padding: 20px 10px 20px 10px;
+
+}
+.copyright-wsr {
+  padding: 20px 10px 20px 10px;
+  float: left;
+  font-weight: 300;
+
+}
+
+.site-by-kewal {
+  padding: 20px 10px 20px 10px;
+  float: right;
+  font-weight: 300;
+
+}
+
+.footer-sponsors {
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+}
+
+.sponsors-font {
+  font-weight: 300;
+}
+
+.footer-line {
+  background-color: #991633;
+  height: 3px;
+  color: red;
+}
