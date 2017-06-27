@@ -17,13 +17,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right ">
-        <li class="active"><a href="#">HOME</a></li>
-        <li><a href="#">TEAM</a></li>
-        <li><a href="#">CAR</a></li>
-        <li><a href="#">SPONSORS</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">JOIN</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li <?php if($page_name == "home") echo 'class="active"'; ?> ><a href="#">HOME</a></li>
+        <li <?php if($page_name == "team") echo 'class="active"'; ?> ><a href="#">TEAM</a></li>
+        <li <?php if($page_name == "car") echo 'class="active"'; ?> ><a href="#">CAR</a></li>
+        <li <?php if($page_name == "sponsors") echo 'class="active"'; ?> ><a href="#">SPONSORS</a></li>
+        <li <?php if($page_name == "news") echo 'class="active"'; ?> ><a href="#">NEWS</a></li>
+        <li <?php if($page_name == "join") echo 'class="active"'; ?> ><a href="#">JOIN</a></li>
+        <li <?php if($page_name == "contact") echo 'class="active"'; ?> ><a href="#">CONTACT</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
