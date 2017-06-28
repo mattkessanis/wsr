@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 body, html {
@@ -10,6 +11,123 @@ body, html {
 -moz-
 -o-
 -ms-*/
+
+.button-custom {
+  background-color: #991633;
+  color: #f7f7f7;
+  padding: 10px 14px 10px 14px;
+  margin-bottom: 20px;
+}
+
+.form-padding {
+  padding: 20px;
+}
+
+li.active.form-tab {
+  border-bottom: 0;
+}
+
+#map {
+  height: 210px;
+  width: 100%;
+  border: 1px solid #979797;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.sub-headings {
+  height:70px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin-top: 20px;
+  border-bottom: 1px solid #991633;
+}
+
+.lead-img {
+  display: block;
+  max-width: 200px;
+  margin: 20px 10px 10px 10px;
+  filter: grayscale(100%);
+  transition: filter 300ms;
+}
+
+.lead-img:hover {
+  filter: grayscale(0%);
+  transition: 300ms;
+}
+
+
+.lead-img-caption {
+  color: #991633;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.lead-designation {
+  color: #262222;
+}
+
+.glyph-red {
+  color: #991633;
+}
+.lead-description{
+  margin: 0 10px 0 10px;
+}
+
+.small-img {
+  margin: 10px 5px 5px 5px;
+  filter: grayscale(100%);
+  transition: filter 300ms;
+  max-width: 100px;
+}
+
+.small-img:hover {
+  filter: grayscale(0%);
+  transition: 300ms;
+}
+
+.small-caption {
+  font-size: 18px;
+  margin: 14px 0 0 0;
+
+}
+
+.small-description {
+  font-size: 12px;
+}
+
+.small-designation{
+  font-size: 14px;
+  margin:0 0 10px 0;
+}
+
+.small-thumbnail {
+  min-height: 110px;
+  padding: 10px;
+}
+
+
+.sub-headings-text {
+  font-weight: 300;
+
+}
+
+
+
+.headings {
+  margin: 100px 0 0 0px;
+}
+
+.page-headings {
+  font-weight: 300;
+  border-bottom: 2px solid #991633;
+  display: inline;
+
+}
+
+.contact-wrapper {
+  margin: 30px auto;
+  position: relative;
+}
 
 .navbar-toggle {
   border: none;
@@ -118,6 +236,7 @@ li.active:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 
 }
 

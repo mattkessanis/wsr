@@ -17,13 +17,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right ">
-        <li <?php if($page_name == "home") echo 'class="active"'; ?> ><a href="#">HOME</a></li>
-        <li <?php if($page_name == "team") echo 'class="active"'; ?> ><a href="#">TEAM</a></li>
-        <li <?php if($page_name == "car") echo 'class="active"'; ?> ><a href="#">CAR</a></li>
-        <li <?php if($page_name == "sponsors") echo 'class="active"'; ?> ><a href="#">SPONSORS</a></li>
-        <li <?php if($page_name == "news") echo 'class="active"'; ?> ><a href="#">NEWS</a></li>
-        <li <?php if($page_name == "join") echo 'class="active"'; ?> ><a href="#">JOIN</a></li>
-        <li <?php if($page_name == "contact") echo 'class="active"'; ?> ><a href="#">CONTACT</a></li>
+        <li <?php if($page_name == "home") echo 'class="active"'; ?> ><a href="index.php">HOME</a></li>
+        <li <?php if($page_name == "team") echo 'class="active"'; ?> ><a href="team.php">TEAM</a></li>
+        <li <?php if($page_name == "car") echo 'class="active"'; ?> ><a href="car.php">CAR</a></li>
+        <li <?php if($page_name == "sponsors") echo 'class="active"'; ?> ><a href="sponsors.php">SPONSORS</a></li>
+        <li <?php if($page_name == "news") echo 'class="active"'; ?> ><a href="news.php">NEWS</a></li>
+        <li <?php if($page_name == "join") echo 'class="active"'; ?> ><a href="join.php">JOIN</a></li>
+        <li <?php if($page_name == "contact") echo 'class="active"'; ?> ><a href="contact.php">CONTACT</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
