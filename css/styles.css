@@ -7,10 +7,35 @@ body, html {
     height: 100%;
 }
 
+.hero-txt {
+  padding: 120px;
+  color: #f7f7f7;
+  font-weight: 300;
+}
 /*-webkit-
 -moz-
 -o-
 -ms-*/
+.car-row {
+  margin-top: 15px;
+}
+
+
+.car-img {
+  max-width: 100%;
+  height:auto;
+
+}
+
+.car-title {
+  color: #991633;
+  font-weight: 300;
+}
+
+.car-description {
+  margin-bottom: 40px;
+}
+
 
 .button-custom {
   background-color: #991633;
