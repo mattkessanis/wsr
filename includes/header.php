@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><?php echo $page_title; ?></title>
-    <link rel="icon" href="favicon.gif" type="image/gif" sizes="16x16">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" >
@@ -20,5 +20,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/jquery.aniview.js"></script>
   </head>
   <body>

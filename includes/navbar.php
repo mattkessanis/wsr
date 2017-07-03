@@ -9,7 +9,7 @@
           <span class="icon-bar bottom-bar"></span>
         </button>
       <a class="navbar-brand" href="#">
-        <img class="logo" alt="Western Sydney Racing" src="assets/images/logo.png" />
+        <img class="logo" alt="Western Sydney Racing" src="assets/images/wsr-logo.svg" />
       </a>
       <p class="navbar-text">WESTERN SYDNEY RACING</p>
     </div>

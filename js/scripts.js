@@ -1,4 +1,8 @@
-
+$('.img-hover-inner').hover(
+  function() {
+    $(this).addClass('img-hover-inner-hovered');
+  }
+);
 
 function initMap() {
   var shed = {

@@ -15,7 +15,7 @@
       </div>
       <div class="col-sm-6">
         <p class="text-right site-by-kewal">
-          Western Sydney Racing &copy; 2017 | Site by Kewal.
+          Western Sydney Racing &copy; 2017 | <a href="http://iamkewal.com" target="_blank">Site by Kewal</a>
         </p>
       </div>
     </div>

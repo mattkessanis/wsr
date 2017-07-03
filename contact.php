@@ -41,28 +41,21 @@
           </div>
           <div class="col-md-6">
             <div class="col-md-6">
-                <p> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <p> <span class="glyphicon glyphicon-map-marker glyph-red" aria-hidden="true"></span>
                   Western Sydney University, <br />
                   Penrith, NSW - 2751.
                 </p>
-                <p> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                  name@domain.com
-                </p>
-                <p> <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-                  0401234567
-                </p>
             </div>
             <div class="col-md-6">
-              <div id="map"></div>
-              <!-- Replace the value of the key parameter with your own API key. -->
-              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWngbHYTCp1TadbViXnirszehqnoI7X8M&callback=initMap">
-
-
-              </script>
+              <p> <span class="glyphicon glyphicon-envelope glyph-red" aria-hidden="true"></span>
+                name@domain.com
+              </p>
+              <p> <span class="glyphicon glyphicon-earphone glyph-red" aria-hidden="true"></span>
+                0401234567
+              </p>
             </div>
             <div class="clearfix"></div>
-            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-            Etiam ultrices ligula et quam vulputate, et ornare ligula fermentum. Vivamus mi massa, vulputate eu luctus quis, vehicula id odio. Duis id leo in mi accumsan pretium. Morbi volutpat facilisis lectus, at eleifend urna facilisis in. Sed aliquam lorem ligula, id ullamcorper urna blandit in. Donec maximus arcu eu nisi imperdiet volutpat. Morbi in augue laoreet, porttitor dolor ut, sollicitudin sapien. Suspendisse condimentum luctus suscipit. Sed nec ligula enim. In hac habitasse platea dictumst. Cras iaculis magna ac viverra placerat. Sed blandit fringilla justo a gravida. Aliquam sed viverra massa, non vehicula elit. Sed sodales nec turpis vitae vehicula.
+            <div id="map"></div>
           </div>
         </div>
       </div>
@@ -74,5 +67,5 @@
   </div>
 </div>
 </div>
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWngbHYTCp1TadbViXnirszehqnoI7X8M&callback=initMap"></script>
 <?php include 'includes/footer.php' ?>

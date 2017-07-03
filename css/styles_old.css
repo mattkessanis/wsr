@@ -21,6 +21,7 @@ body, html {
 }
 
 
+
 .car-img {
   max-width: 100%;
   height:auto;
@@ -53,9 +54,9 @@ li.active.form-tab {
 }
 
 #map {
-  height: 250px;
+  height: 210px;
   width: 100%;
-
+  border: 1px solid #979797;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -69,10 +70,27 @@ li.active.form-tab {
 
 .lead-img {
   display: block;
-  max-width: 200px;
-  margin: 20px 10px 10px 10px;
+  overflow: hidden;
   filter: grayscale(100%);
   transition: filter 300ms;
+}
+
+.image-wrapper {
+  position: absolute;
+}
+
+.img-hover-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  opacity: 0.5;
+}
+
+.img-hover-inner-hovered {
+  opacity: 0;
 }
 
 .lead-img:hover {
@@ -82,11 +100,12 @@ li.active.form-tab {
 
 
 .lead-img-caption {
-  color: #991633;
+  position: relative;
+  top: 30%;
+  color: #fff;
   font-weight: 300;
   margin: 10px;
 }
-
 
 .lead-designation {
   color: #262222;
@@ -100,10 +119,10 @@ li.active.form-tab {
 }
 
 .small-img {
-  margin: 5px 5px 5px 5px;
+  margin: 10px 5px 5px 5px;
   filter: grayscale(100%);
   transition: filter 300ms;
-  width: 150px;
+  max-width: 100px;
 }
 
 .small-img:hover {
@@ -111,43 +130,38 @@ li.active.form-tab {
   transition: 300ms;
 }
 
-
 .small-caption {
-  font-size: 14px;
-  margin-bottom: 5px;
-  margin: 0;
-}
-.small-designation{
-  font-size: 10px;
-  margin-bottom: 5px;
-  margin: 0;
+  font-size: 18px;
+  margin: 14px 0 0 0;
 
 }
-.team-caption-wrapper {
-  background-color: rgba(255,255,255, 0.7);
-  height: 40px;
-  width: 150px;
-  position: absolute;
-  bottom: 10px;
-  left: 15px;
-  padding: 5px;
-}
+
 .small-description {
   font-size: 12px;
 }
-.small-thumbnail {
-  width: 160px;
-  padding: 10px;
-  margin: 0 10px 0 10px;
+
+.small-designation{
+  font-size: 14px;
+  margin:0 0 10px 0;
 }
+
+.small-thumbnail {
+  min-height: 110px;
+  padding: 10px;
+}
+
+
 .sub-headings-text {
   font-weight: 300;
 
 }
+
+
+
 .headings {
   margin: 100px 0 0 0px;
-  text-align: center;
 }
+
 .page-headings {
   font-weight: 300;
   border-bottom: 2px solid #991633;
@@ -159,21 +173,6 @@ li.active.form-tab {
   margin: 30px auto;
   position: relative;
 }
-
-
-.lead-caption-wrapper {
-  background-color: rgba(153, 22, 51, 0.8);
-}
-
-.white-caption {
-  color: #fff;
-}
-
-.color-img {
-  filter: grayscale(0%);
-}
-
-
 
 .navbar-toggle {
   border: none;
@@ -265,20 +264,13 @@ li.active:hover {
 
 .navbar-inverse .navbar-text {
     color: #f7f7f7;
-    font-weight: 300;
+    font-weight: 200;
 
 }
 
 .navbar-brand {
   padding: 8px 5px 8px 8px;
   margin: 0;
-
-}
-
-.logo {
-  height: 40px;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar {
@@ -294,7 +286,9 @@ li.active:hover {
 }
 
 
-
+.logo {
+  height: 30px;
+}
 
 .zero-mp {
   margin: 0;
