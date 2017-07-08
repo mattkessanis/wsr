@@ -1,7 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  margin-bottom: 50px;
   height: 100%;
 }
 html {
@@ -14,6 +13,30 @@ footer {
   background-color: rgba(255,255,255, 0.95);
 }
 
+.close {
+  display: inline-block;
+  height: 20px;
+  opacity: 1;
+}
+.close:hover {
+  opacity: 1;
+  color: #333;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  right: 25px !important;
+  content: ' ';
+  height: 20px;
+  width: 1px;
+  background-color: #991633;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
 .hero-txt {
   padding: 120px;
   color: #f7f7f7;
@@ -23,6 +46,60 @@ footer {
   width: 230px;
   display: inline-block;
   margin: 10px;
+}
+
+.modal-title {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+.modal-about {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 12px;
+}
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin-top: 90px;
+
+}
+
+.team-container {
+  padding-bottom: 120px;
+}
+.modal-img {
+  min-width:150px;
+  min-height: 150px;
+  float: right;
+}
+.modal-body {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.modal-footer {
+  padding: 10px;
+}
+.modal-left {
+  float: left;
+  margin: 0 10px 10px 20px;
+}
+.modal-right {
+  float: left;
+  margin: 0 20px 10px 10px;
+
+}
+
+.modal-right h5 {
+  font-size: 11px;
+
+}
+.modal-right h4 {
+  color: #991633;
+}
+.modal-roles {
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .car-row {
@@ -88,16 +165,25 @@ li.active.form-tab {
 .lead-img-caption {
   color: #991633;
   font-weight: 300;
-  margin: 10px;
+  font-size: 14px;
+  margin-bottom: 3px;
+  margin: 0;
 }
 .lead-designation {
   color: #262222;
+  font-size: 10px;
+  margin: 0 0 10px 0;
 }
 .glyph-red {
   color: #991633;
 }
 .lead-description{
   margin: 0 10px 0 10px;
+}
+.modal-close {
+  background: #991633;
+  color: #fff;
+  font-weight: 300;
 }
 
 .small-img {
@@ -111,14 +197,10 @@ li.active.form-tab {
   transition: 300ms;
 }
 .small-caption {
-  font-size: 14px;
-  margin-bottom: 3px;
-  margin: 0;
+
 }
 .small-designation{
-  font-size: 10px;
-  margin-bottom: 3px;
-  margin: 0;
+
 }
 .team-caption-wrapper {
   background-color: rgba(255,255,255, 0.7);
@@ -315,7 +397,7 @@ li.active:hover {
   margin:0;
 }
 .footer-sponsors {
-  padding: 10px;
+  padding: 10px 100px 10px 10px;
   white-space: nowrap;
   overflow-y: scroll;
 }
@@ -347,7 +429,38 @@ li.active:hover {
   position: fixed;
   bottom: 0;
   right: 0;
-  background: #f7f7f7;
+  background: #fff;
+}
+.news-container {
+  padding-bottom: 100px;
+}
+.news-row {
+  margin-top: 15px;
+}
+.news-heading {
+  margin-bottom: 20px;
+}
+
+.news-wrapper {
+  max-width:270px;
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+}
+.news-description {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+.news-img {
+  max-width:270px;
+}
+.news-img-k {
+  max-width:370px;
+}
+.news-time {
+  font-size: 11px;
+  font-weight: 300;
 }
 
 .fa:hover {

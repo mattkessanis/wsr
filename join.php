@@ -62,9 +62,44 @@
         </div>
       </div>
       <div role="tabpanel" class="tab-pane" id="engineering-project">
-        <p class="text-left">
-          ****** COMING SOON *******
-        </p>
+        <div class="row form-padding">
+          <div class="col-md-6">
+            <p>
+              Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
+            </p>
+            <form>
+              <div class="form-group">
+                <input type="name" class="form-control" id="general-name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="general-email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="general-phone" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows=6 id="general-message" placeholder="Message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-default button-custom">Send Request</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <p>
+              Dummy content!
+            </p>
+            <h4>Dummy List</h4>
+            <ul>
+              <li>Dummy item</li>
+              <li>Dummy item</li>
+              <li>Dummy item</li>
+              <li>Dummy item</li>
+              <li>Dummy item</li>
+              
+
+            </ul>
+          </div>
+        </div>
       </div>
   </div>
 </div>

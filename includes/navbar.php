@@ -42,10 +42,10 @@
         <li class="social-nav">
           <div class="social-column">
             <a class="nav-fa" href="https://www.facebook.com/westernsydneyracing/" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-            <a class="nav-fa" href="http://youtube.com" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+            <a class="nav-fa" href="https://www.youtube.com/channel/UCUN-iAEGX6KntpE5eCAYLaw" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
             <a class="nav-fa" href="https://twitter.com/WestSydRacing/" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
             <a class="nav-fa" href="https://instagram.com/westernsydneyracing" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-            <a class="nav-fa" href="http://snapchat.com" target="_blank"><i class="fa fa-snapchat-ghost fa-lg" aria-hidden="true"></i></a>
+            <a class="nav-fa" href="https://www.snapchat.com/add/westsydracing" target="_blank"><i class="fa fa-snapchat-ghost fa-lg" aria-hidden="true"></i></a>
           </div>
         </li>
       </ul>
