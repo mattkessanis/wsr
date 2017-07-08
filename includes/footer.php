@@ -1,24 +1,23 @@
+<!-- <div class="footspace"></div> -->
+</div>
   <footer class="container-fluid zero-mp">
-    <div class="footer-sponsors">
-      <h4 class="sponsors-font">SPONSORS:</h4>
-    </div>
     <div class="footer-line"></div>
-    <div class="row margin-zeros">
-      <div class="col-sm-6">
-        <div class="social-footer">
-          <image class="social-icons-footer" src="assets/images/facebook.png"></image>
-          <image class="social-icons-footer" src="assets/images/youtube.png"></image>
-          <image class="social-icons-footer" src="assets/images/twitter.png"></image>
-          <image class="social-icons-footer" src="assets/images/instagram.png"></image>
-          <image class="social-icons-footer" src="assets/images/snapchat.png"></image>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <p class="text-right site-by-kewal">
-          Western Sydney Racing &copy; 2017 | <a href="http://iamkewal.com" target="_blank">Site by Kewal</a>
+    <div class="footer-sponsors">
+      <a href="https://www.westernsydney.edu.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/wsu.png" /></a>
+      <a href="http://www.saea.com.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/fsae.png" /></a>
+      <a href="https://www.ford.com.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/ford.png" /></a>
+      <a href="https://www.holden.com.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/holden.png" /></a>
+      <a href="http://www.toyota.com.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/toyota.png" /></a>
+      <a href="http://www.bosch.com.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/bosch.png" /></a>
+      <a href="http://www.defencejobs.gov.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/defence.png" /></a>
+      <div class="site-by">
+        <p>
+          <a href="http://iamkewal.com" target="_blank">Site by Kewal</a>
         </p>
       </div>
     </div>
+
+
     </div>
   </footer>
 

@@ -1,7 +1,7 @@
 <?php $page_title = 'Western Sydney Racing: News'; include 'includes/header.php'; ?>
 <?php $page_name = "news"; include 'includes/navbar.php'; ?>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="headings">
       <h3 class="page-headings">NEWS</h3>
     </div>

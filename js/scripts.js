@@ -135,6 +135,8 @@ function initMap() {
 
 
   });
+
+  
   var image = 'assets/images/marker.png';
   var marker = new google.maps.Marker({
     position: shed,
