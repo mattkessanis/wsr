@@ -1,5 +1,17 @@
+<?php
+
+  $prefix = "includes/backend/";
+  include "includes/protected/config.php";
+
+  $log = Factory::createLog();
+
+ ?>
+
+
+
 <?php $page_title = 'Western Sydney Racing: Contact'; include 'includes/header.php'; ?>
 <?php $page_name = "join"; include 'includes/navbar.php'; ?>
+
 <div class="container">
   <div class="headings">
     <h3 class="page-headings">JOIN</h3>
@@ -17,21 +29,23 @@
             <p>
               Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
             </p>
-            <form>
+            <form onsubmit="send('team')">
               <div class="form-group">
-                <input type="name" class="form-control" id="general-name" placeholder="Name">
+                <input type="name" class="form-control" id="team-name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="general-email" placeholder="Email">
+                <input type="email" class="form-control" id="team-email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="general-phone" placeholder="Phone">
+                <input type="number" class="form-control" id="team-phone" placeholder="Phone">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows=6 id="general-message" placeholder="Message"></textarea>
+                <textarea class="form-control" rows=6 id="team-message" placeholder="Message"></textarea>
               </div>
-
-              <button type="submit" class="btn btn-default button-custom">Send Request</button>
+              <div class="form-group">
+                <span id="team-response"></span>
+              </div>
+              <button name="join" type="submit" class="btn btn-default button-custom">Send Request</button>
             </form>
           </div>
           <div class="col-md-6">
@@ -67,21 +81,21 @@
             <p>
               Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
             </p>
-            <form action="/includes/backend/listener.php">
+            <form onsubmit="send('eng')">
               <div class="form-group">
-                <input type="name" class="form-control" id="general-name" placeholder="Name">
+                <input type="name" class="form-control" id="eng-name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="general-email" placeholder="Email">
+                <input type="email" class="form-control" id="eng-email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="general-phone" placeholder="Phone">
+                <input type="number" class="form-control" id="eng-phone" placeholder="Phone">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows=6 id="general-message" placeholder="Message"></textarea>
+                <textarea class="form-control" rows=6 id="eng-message" placeholder="Message"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-default button-custom">Send Request</button>
+              <button name="join" type="submit" class="btn btn-default button-custom">Send Request</button>
             </form>
           </div>
           <div class="col-md-6">
@@ -105,24 +119,32 @@
 <script>
 
 
-  function send() {
-    var name = document.getElementById("general-name").innerHTML;
-    var email = document.getElementById("general-email").innerHTML;
-    var phone = document.getElementById("general-email").innerHTML;
-    var message = document.getElementById("general-email").innerHTML;
+  function send(type) {
 
-    var data = [name,email,phone,message];
-    alert(name, email, phone, message);
+    var name, email, phone, message;
 
-    /*var xhttp = new XMLHttpRequest();
+    if(type === "team") {
+      name = document.getElementById("team-name").value;
+      email = document.getElementById("team-email").value;
+      phone = document.getElementById("team-email").value;
+      message = document.getElementById("team-email").value;
+      var result = document.getElementById("team-response");
+    } else {
+      name = document.getElementById("eng-name").value;
+      email = document.getElementById("eng-email").value;
+      phone = document.getElementById("eng-email").value;
+      message = document.getElementById("eng-email").value;
+      alert("eng = "+name);
+    }
+
+    var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-
+        result.innerHTML = name;
       }
     };
-    file = file+logged;
-    xhttp.open("GET", file, true);
-    xhttp.send();*/
+    xhttp.open("GET", "<?php echo LISTENER?>?name="+name, true);
+    xhttp.send();
   }
 </script>
 <?php include 'includes/footer.php' ?>

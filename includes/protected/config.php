@@ -17,6 +17,7 @@
   // ------------------------------------------  constants --------------------------------------------
 
   define('LOGGING_DIR', '/var/www/errors.log');
+  define('LISTENER', '/wsr/includes/backend/listener.php');
   define('DATABASE_TYPE', 'PDO');
 
 
