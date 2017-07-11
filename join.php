@@ -67,7 +67,7 @@
             <p>
               Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
             </p>
-            <form>
+            <form action="/includes/backend/listener.php">
               <div class="form-group">
                 <input type="name" class="form-control" id="general-name" placeholder="Name">
               </div>
@@ -95,8 +95,6 @@
               <li>Dummy item</li>
               <li>Dummy item</li>
               <li>Dummy item</li>
-              
-
             </ul>
           </div>
         </div>
@@ -104,4 +102,27 @@
   </div>
 </div>
 </div>
+<script>
+
+
+  function send() {
+    var name = document.getElementById("general-name").innerHTML;
+    var email = document.getElementById("general-email").innerHTML;
+    var phone = document.getElementById("general-email").innerHTML;
+    var message = document.getElementById("general-email").innerHTML;
+
+    var data = [name,email,phone,message];
+    alert(name, email, phone, message);
+
+    /*var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+
+      }
+    };
+    file = file+logged;
+    xhttp.open("GET", file, true);
+    xhttp.send();*/
+  }
+</script>
 <?php include 'includes/footer.php' ?>

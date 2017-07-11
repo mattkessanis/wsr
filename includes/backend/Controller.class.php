@@ -3,6 +3,7 @@
   /**
   * Controller class for handling all control operations
   */
+
   class Controller {
 
     public static $formMessage;
@@ -30,20 +31,6 @@
         }
       }
     }
-
-    /**
-    * makes the current page highlighted on nav bar if a main or sub menu option is active
-    */
-    public static function isActive() {
-      $parts = explode("/", $_SERVER["PHP_SELF"]);
-      $page = $parts[2];
-      $subHeader = func_get_args();
-
-      foreach($subHeader as $url) {
-        if($url === $page) {
-          echo 'active';
-        }
-      }
-    }
   }
+
  ?>
