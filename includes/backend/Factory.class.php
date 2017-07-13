@@ -14,6 +14,8 @@
       $adaptor = "DatabaseAdaptor". DATABASE_TYPE;
 
       if (class_exists($adaptor)) {
+        $log = Factory::createLog();
+        $log->output("database created");
         return new $adaptor(Factory::$connectionValues);
       }
     }

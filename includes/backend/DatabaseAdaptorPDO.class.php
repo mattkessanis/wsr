@@ -46,7 +46,7 @@
     public function countEntries($table) {
       $count = 0;
       $sql = "SELECT * FROM $table";
-      $statement = $pdo->prepare($sql);
+      $statement = $this->pdo->prepare($sql);
       $statement->execute();
       while($row = $statement->fetch()) {
         $count = $count + 1;
