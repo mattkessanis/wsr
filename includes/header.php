@@ -16,8 +16,8 @@
     <link href="css/styles.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500" rel="stylesheet">
     <script src="https://use.fontawesome.com/54aa314e97.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-
+    <script src="js/ajaxController.js"></script>
   </head>
   <body>

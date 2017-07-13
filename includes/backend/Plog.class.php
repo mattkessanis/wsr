@@ -47,7 +47,7 @@
       $this->destination = LOGGING_DIR;
       $this->devMode = true;
       $this->messageType = 3;
-      $this->dateOn = true;
+      $this->dateOn = false;
       $this->exOptions = array(
         "MESSAGE",
         "FILE",

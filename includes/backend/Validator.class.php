@@ -27,7 +27,8 @@
     private $numericCheck = "/^[0-9]*$/";
 
     // email test
-    private $emailCheck = "/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i";
+    private $emailCheck = "/^\S+@\S+\.\S+$/";
+    //private $emailCheck = "/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i";
 
     // the class error message provided once validation is completed
     private $message = "";
@@ -36,14 +37,14 @@
     private $errorCount = 0;
 
     private $errorMessages = array(
-      "required" => "Error: {field} is a required field.",
-      "name" => "Error: {field} can only contain letters and commas.",
-      "numeric" => "Error: {field} must only contain numbers.",
-      "email" => "Error: {field} contains invalid characters.",
-      "text" => "Error: {field} contains invalid characters.",
-      "min" => "Error: {field} must be at least {param} characters.",
-      "max" => "Error: {field} must be less than {param} characters.",
-      "exact" => "Error: {field} must be exactly {param} characters.",
+      "required" => " {field} is a required field.",
+      "name" => " {field} can only contain letters, commas and spaces.",
+      "numeric" => " {field} must only contain numbers.",
+      "email" => " invalid {field} provided.",
+      "text" => " {field} contains invalid characters.",
+      "min" => " {field} must be at least {param} characters.",
+      "max" => " {field} must be less than {param} characters.",
+      "exact" => " {field} must be exactly {param} characters.",
     );
 
     // ** ----------------------------------- Constructor ---------------------------------------- ** //
@@ -57,6 +58,7 @@
 
       try {
         $this->log = $log;
+        $log->devMode(false);
         if(!is_object($log) && !is_a($log, "Plog")) {
           throw new Exception("Validator class needs Plog object passed to constructor");
         }
@@ -138,11 +140,12 @@
         $filters = explode("|", $this->filterRules[$key]);
 
         foreach($filters as $filter) {
-
+          // Here we use the string value passed as the name of our filter method, ie 'trim'
           if(function_exists($filter)) {
 
             $values[$key] = $filter($values[$key]);
           } else {
+            // or we split the string again and use its values, ie 'sanitze' and 'string'
             $pieces = explode("_", $filter);
             $sanFilter = $pieces[1];
             $values[$key] = filter_var($values[$key], filter_id($sanFilter));
@@ -204,10 +207,13 @@
     private function validTest($key, $value, $name) {
 
       $type = $name."Check";
-
+      $this->log->output("Value check :". " ".$value);
+      $this->log->output("Using : ".$type);
       if(preg_match($this->$type, $value)) {
+        $this->log->output("Value result : good");
         return 0;
       } else {
+        $this->log->output("Value result : bad");
         $this->addMessage($name, $key);
         return 1;
       }

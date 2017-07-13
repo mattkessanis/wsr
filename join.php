@@ -1,14 +1,7 @@
 <?php
-
   $prefix = "includes/backend/";
   include "includes/protected/config.php";
-
-  $log = Factory::createLog();
-
- ?>
-
-
-
+?>
 <?php $page_title = 'Western Sydney Racing: Contact'; include 'includes/header.php'; ?>
 <?php $page_name = "join"; include 'includes/navbar.php'; ?>
 
@@ -29,24 +22,24 @@
             <p>
               Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
             </p>
-            <form onsubmit="send('team')">
+            <form id="team-contact" method="post" action="<?php echo LISTENER?>">
               <div class="form-group">
-                <input type="name" class="form-control" id="team-name" placeholder="Name">
+                <input type="name" class="form-control" id="team-name" name="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="team-email" placeholder="Email">
+                <input type="email" class="form-control" id="team-email" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="team-phone" placeholder="Phone">
+                <input type="number" class="form-control" id="team-phone" name="phone" placeholder="Phone">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows=6 id="team-message" placeholder="Message"></textarea>
+                <textarea class="form-control" rows=6 id="team-message" name="message" placeholder="Message"></textarea>
               </div>
-              <div class="form-group">
-                <span id="team-response"></span>
-              </div>
-              <button name="join" type="submit" class="btn btn-default button-custom">Send Request</button>
+              <button id="team-button" type="submit" class="btn btn-default button-custom">Send Request</button>
             </form>
+            <div class="form-group" >
+              <p id="team-result"></p>
+            </div>
           </div>
           <div class="col-md-6">
             <p>
@@ -81,22 +74,24 @@
             <p>
               Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
             </p>
-            <form onsubmit="send('eng')">
+            <form id="eng-contact" method="post" action="<?php echo LISTENER?>">
               <div class="form-group">
-                <input type="name" class="form-control" id="eng-name" placeholder="Name">
+                <input type="name" class="form-control" id="eng-name" name="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="eng-email" placeholder="Email">
+                <input type="email" class="form-control" id="eng-email" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="eng-phone" placeholder="Phone">
+                <input type="number" class="form-control" id="eng-phone" name="phone" placeholder="Phone">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows=6 id="eng-message" placeholder="Message"></textarea>
+                <textarea class="form-control" rows=6 id="eng-message" name="message" placeholder="Message"></textarea>
               </div>
-
-              <button name="join" type="submit" class="btn btn-default button-custom">Send Request</button>
+              <button name="join" id="eng-button" type="submit" class="btn btn-default button-custom">Send Request</button>
             </form>
+            <div class="form-group" >
+              <p id="eng-result"></p>
+            </div>
           </div>
           <div class="col-md-6">
             <p>
@@ -116,35 +111,4 @@
   </div>
 </div>
 </div>
-<script>
-
-
-  function send(type) {
-
-    var name, email, phone, message;
-
-    if(type === "team") {
-      name = document.getElementById("team-name").value;
-      email = document.getElementById("team-email").value;
-      phone = document.getElementById("team-email").value;
-      message = document.getElementById("team-email").value;
-      var result = document.getElementById("team-response");
-    } else {
-      name = document.getElementById("eng-name").value;
-      email = document.getElementById("eng-email").value;
-      phone = document.getElementById("eng-email").value;
-      message = document.getElementById("eng-email").value;
-      alert("eng = "+name);
-    }
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        result.innerHTML = name;
-      }
-    };
-    xhttp.open("GET", "<?php echo LISTENER?>?name="+name, true);
-    xhttp.send();
-  }
-</script>
 <?php include 'includes/footer.php' ?>
