@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <?php
   $prefix = "includes/backend/";
   include "includes/protected/config.php";
 ?>
+=======
+>>>>>>> f966db32b28f333be19dbfd7f2ace0e7de412981
 <?php $page_title = 'Western Sydney Racing: Contact'; include 'includes/header.php'; ?>
 <?php $page_name = "contact"; include 'includes/navbar.php'; ?>
 <div class="container">
@@ -62,6 +65,7 @@
         <div class="row form-padding">
           <div class="col-md-6">
             <div>
+<<<<<<< HEAD
               <form id="sponser-contact" method="post" action="<?php echo LISTENER?>">
                 <div class="form-group">
                   <input type="name" class="form-control" id="sponser-name" name="name" placeholder="Name">
@@ -80,6 +84,23 @@
               <div class="form-group" >
                 <p id="sponser-result"></p>
               </div>
+=======
+              <form>
+                <div class="form-group">
+                  <input type="name" class="form-control" id="general-name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="general-email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control" id="general-phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows=6 id="general-message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default button-custom">Send Enquiry</button>
+              </form>
+>>>>>>> f966db32b28f333be19dbfd7f2ace0e7de412981
             </div>
           </div>
           <div class="col-md-6">
