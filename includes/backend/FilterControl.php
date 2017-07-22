@@ -2,11 +2,11 @@
   /**
   * Class: FilterControl
   * Stores and allows access to all the filter / validation rules used in the program
+  *
+  * @author - Ben Futterleib
   */
 
-
   class FilterControl {
-
 
     //** -----------------------------------------   Member rules --------------------------------------- **//
 
@@ -23,10 +23,19 @@
       "message" => "required|valid_text|min_3|max_300",
     );
 
+    //** ----------------------------------------- Getter functions ------------------------------------- **//
+
+
+    /*
+    * returns the member filter options
+    */
     public static function memberFilters() {
       return FilterControl::$memberFilters;
     }
 
+    /*
+    * returns the member validation options
+    */
     public static function memberValidators() {
       return FilterControl::$memberValidation;
     }

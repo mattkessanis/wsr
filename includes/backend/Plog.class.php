@@ -82,7 +82,6 @@
       }
     }
 
-
     /*
     * set and get the message destination, more info http://php.net/manual/en/function.error-log.php
     */

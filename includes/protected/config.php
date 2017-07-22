@@ -17,7 +17,7 @@
   // ------------------------------------------  constants --------------------------------------------
 
   define('LOGGING_DIR', '/var/www/errors.log');
-  define('LISTENER', '/wsr/includes/backend/listener.php');
+  define('LISTENER', '/wsr/includes/backend/wsrFormListener.php');
   define('DATABASE_TYPE', 'PDO');
 
 
@@ -36,7 +36,6 @@
 
   require_once $prefix."Plog.class.php";
   require_once $prefix."Controller.class.php";
-  require_once $prefix."functions.script.php";
   require_once $prefix."Validator.class.php";
   require_once $prefix."Factory.class.php";
   require_once $prefix."DatabaseAdaptor.inter.php";

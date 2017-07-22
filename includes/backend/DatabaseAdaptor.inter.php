@@ -6,12 +6,12 @@
   * @author - Ben Futterleib
   */
 
- 
+
   interface DatabaseAdaptor {
 
-    function runQuery($sql);
+    function setterQuery($values, $sql);
 
-    function addValues($values);
+    function checkExists($values, $sql);
 
     function setConnectionInfo($values = array());
 
