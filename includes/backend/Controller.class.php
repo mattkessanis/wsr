@@ -1,7 +1,7 @@
 <?php
 
   /**
-  * Controller class for handling all control operations
+  * Controller class for handling all control operations, TODO: either use this or delete
   */
 
   class Controller {

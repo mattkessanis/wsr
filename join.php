@@ -1,15 +1,15 @@
-<<<<<<< HEAD
 <?php
+  //** ------------------------------------ Page variables ---------------------------------------------- **//
   $prefix = "includes/backend/";
-  include "includes/protected/config.php";
-?>
-<?php $page_title = 'Western Sydney Racing: Contact'; include 'includes/header.php'; ?>
-<?php $page_name = "join"; include 'includes/navbar.php'; ?>
+  $page_title = 'Western Sydney Racing: Join';
+  $page_name = "contact";
 
-=======
-<?php $page_title = 'Western Sydney Racing: Contact'; include 'includes/header.php'; ?>
-<?php $page_name = "join"; include 'includes/navbar.php'; ?>
->>>>>>> f966db32b28f333be19dbfd7f2ace0e7de412981
+  //** ------------------------------------ Page includes ----------------------------------------------- **//
+  include "includes/protected/config.php";
+  include 'includes/header.php';
+  include 'includes/navbar.php';
+
+?>
 <div class="container">
   <div class="headings">
     <h3 class="page-headings">JOIN</h3>
