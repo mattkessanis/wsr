@@ -1,5 +1,15 @@
+<<<<<<< HEAD
+<?php
+  $prefix = "includes/backend/";
+  include "includes/protected/config.php";
+?>
 <?php $page_title = 'Western Sydney Racing: Contact'; include 'includes/header.php'; ?>
 <?php $page_name = "join"; include 'includes/navbar.php'; ?>
+
+=======
+<?php $page_title = 'Western Sydney Racing: Contact'; include 'includes/header.php'; ?>
+<?php $page_name = "join"; include 'includes/navbar.php'; ?>
+>>>>>>> f966db32b28f333be19dbfd7f2ace0e7de412981
 <div class="container">
   <div class="headings">
     <h3 class="page-headings">JOIN</h3>
@@ -17,22 +27,24 @@
             <p>
               Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
             </p>
-            <form>
+            <form id="team-contact" method="post" action="<?php echo LISTENER?>">
               <div class="form-group">
-                <input type="name" class="form-control" id="general-name" placeholder="Name">
+                <input type="name" class="form-control" id="team-name" name="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="general-email" placeholder="Email">
+                <input type="email" class="form-control" id="team-email" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="general-phone" placeholder="Phone">
+                <input type="number" class="form-control" id="team-phone" name="phone" placeholder="Phone">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows=6 id="general-message" placeholder="Message"></textarea>
+                <textarea class="form-control" rows=6 id="team-message" name="message" placeholder="Message"></textarea>
               </div>
-
-              <button type="submit" class="btn btn-default button-custom">Send Request</button>
+              <button id="team-button" type="submit" class="btn btn-default button-custom">Send Request</button>
             </form>
+            <div class="form-group" >
+              <p id="team-result"></p>
+            </div>
           </div>
           <div class="col-md-6">
             <p>
@@ -67,22 +79,24 @@
             <p>
               Our Formula SAE team transforms students into skilled, experienced, professionals. We are always looking for new members!
             </p>
-            <form>
+            <form id="eng-contact" method="post" action="<?php echo LISTENER?>">
               <div class="form-group">
-                <input type="name" class="form-control" id="general-name" placeholder="Name">
+                <input type="name" class="form-control" id="eng-name" name="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="general-email" placeholder="Email">
+                <input type="email" class="form-control" id="eng-email" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="general-phone" placeholder="Phone">
+                <input type="number" class="form-control" id="eng-phone" name="phone" placeholder="Phone">
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows=6 id="general-message" placeholder="Message"></textarea>
+                <textarea class="form-control" rows=6 id="eng-message" name="message" placeholder="Message"></textarea>
               </div>
-
-              <button type="submit" class="btn btn-default button-custom">Send Request</button>
+              <button name="join" id="eng-button" type="submit" class="btn btn-default button-custom">Send Request</button>
             </form>
+            <div class="form-group" >
+              <p id="eng-result"></p>
+            </div>
           </div>
           <div class="col-md-6">
             <p>
@@ -95,8 +109,6 @@
               <li>Dummy item</li>
               <li>Dummy item</li>
               <li>Dummy item</li>
-              
-
             </ul>
           </div>
         </div>
