@@ -1,6 +1,6 @@
 <?php $page_title = 'Western Sydney Racing: Sponsors'; include 'includes/header.php'; ?>
 <?php $page_name = "sponsors"; include 'includes/navbar.php'; ?>
-<div class="container-fluid">
+<div class="container-fluid text-center">
   <div class="headings">
     <h3 class="page-headings">SPONSORS</h3>
   </div>

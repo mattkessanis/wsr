@@ -1,122 +1,122 @@
 <?php $page_title = 'Western Sydney Racing: Team'; include 'includes/header.php'; ?>
 <?php $page_name = "team"; include 'includes/navbar.php'; ?>
-  <div class="container-fluid team-container">
+  <div class="container-fluid team-container text-center">
     <div class="headings">
     </div>
     <div class="sub-headings">
       <h4 class="sub-headings-text text-center">2017 TEAM</h4>
     </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail" >
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+    <div class="team-div">
+      <div class="team-wrapper" >
+        <img class="team-img" src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper lead-caption-wrapper">
-          <h4 class="lead-img-caption  white-caption">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation  white-caption">Team Lead</h5>
+          <p class="team-img-caption  white-caption">John Doe</p>
+          <p class="team-designation  white-caption">Team Lead<p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption ">John Doe</p>
+          <p class="team-designation ">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">John Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">John Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption ">Jane Doe</p>
+          <p class="team-designation ">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">Jane Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">Jane Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">Jane Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">John Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">John Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">John Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team1.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team1.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">John Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">John Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">Jane Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">Jane Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption ">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation ">Design Engineer</h5>
+          <p class="team-img-caption">Jane Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-6 small-thumbnail" data-toggle="modal" data-target="#myModal">
-        <img class="small-img pull-left" src="assets/images/team/team2.jpg" />
+      <div class="team-wrapper" data-toggle="modal" data-target="#myModal">
+        <img class="team-img " src="assets/images/team/team2.jpg" />
         <div class="team-caption-wrapper">
-          <h4 class="lead-img-caption">Jane Doe</h4>
-          <h5 class="lead-img-caption lead-designation">Design Engineer</h5>
+          <p class="team-img-caption">Jane Doe</p>
+          <p class="team-designation">Design Engineer</p>
         </div>
       </div>
     </div>
@@ -136,7 +136,7 @@
             </div>
             <div class="modal-right">
               <h4 class="modal-title">Jane Doe</h4>
-              <h5 class="lead-img-caption lead-designation">Design Engineer</h5>
+              <h5 class="team-designation">Design Engineer</h5>
               <p>
                 Duties:
               </p>
