@@ -539,6 +539,41 @@ li.active:hover {
 }
 
 .team-div {
-  padding-top: 10px;
   padding-bottom: 50px;
+}
+
+.team-heading {
+  margin-bottom: 10px;
+}
+
+.year-nav {
+  display: inline-block;
+  margin: 0;
+
+}
+
+.year-nav:hover {
+  border:0;
+  color: #991633;
+}
+
+
+.sign-form {
+  margin-top: 100px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-button {
+  color: #991633;
+  border-color: #991633;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.sign-button:hover {
+  background-color: #991633;
+  color: #f7f7f7;
+  border-color: #991633;
 }
