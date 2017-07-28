@@ -1,8 +1,7 @@
 <?php $page_title = 'Western Sydney Racing: Team'; include 'includes/header.php'; ?>
 <?php $page_name = "team"; include 'includes/navbar.php'; ?>
   <div class="container-fluid team-container text-center">
-    <div class="headings">
-    </div>
+    
         
         <div id="team-2017" class="team-div">
           <div class="sub-headings team-heading">
@@ -98,7 +97,7 @@
             <div class="clearfix"></div>
             <div class="modal-about">
               <p>
-                But the third Emir, now seeing himself all alone on the quarter-deck, seems to feel relieved from some curious restraint; for, tipping all sorts of knowing winks in all sorts of directions, and kicking off his shoes, he strikes into a sharp but noiseless squall of a hornpipe right over the Grand Turk's head; and then, by a dexterous sleight, pitching his cap up into the mizentop for a shelf, he goes down rollicking so far at least as he remains visible from the deck, reversing all other processions, by bringing up the rear with music.
+                 But the third Emir, now seeing himself all alone on the quarter-deck, seems to feel relieved from some curious restraint; for, tipping all sorts of knowing winks in all sorts of directions, and kicking off his shoes, he strikes into a sharp but noiseless squall of a hornpipe right over the Grand Turk's head; and then, by a dexterous sleight, pitching his cap up into the mizentop for a shelf, he goes down rollicking so far at least as he remains visible from the deck, reversing all other processions, by bringing up the rear with music. 
               </p>
             </div>
         </div>

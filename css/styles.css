@@ -66,6 +66,7 @@ footer {
 }
 
 .team-container {
+  padding-top: 70px;
   padding-bottom: 120px;
 }
 .modal-img {
@@ -138,10 +139,9 @@ li.active.form-tab {
   border-radius: 5px;
 }
 .sub-headings {
-  height:70px;
-  padding: 15px;
-  margin-top: 20px;
-  border-bottom: 1px solid #991633;
+  margin: 10px 0 0 0;
+    text-align: center;
+    padding: 10px;
 }
 
 .sub-headings-bottom {
@@ -214,15 +214,20 @@ li.active.form-tab {
 }
 .sub-headings-text {
   font-weight: 300;
+  display: inline;
+  border-bottom: 1px solid #991633;
 }
 .headings {
   margin: 100px 0 0 0px;
   text-align: center;
+  padding: 15px;
+  
 }
 .page-headings {
   font-weight: 300;
-  border-bottom: 2px solid #991633;
   display: inline;
+  border-bottom: 1px solid #991633;
+  
 }
 .contact-wrapper {
   margin: 30px auto;
@@ -539,7 +544,7 @@ li.active:hover {
 }
 
 .team-div {
-  padding-bottom: 50px;
+
 }
 
 .team-heading {
@@ -576,4 +581,19 @@ li.active:hover {
   background-color: #991633;
   color: #f7f7f7;
   border-color: #991633;
+}
+
+.sponsors-container {
+  padding-bottom: 70px;
+}
+
+.mobile {
+  max-width: 100px;
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

@@ -36,7 +36,7 @@
               m:
             </td>
             <td style="color:rgb(51,51,51);font-size:14px;font-family:Arial,Helvetica,sans-serif">
-              <?php echo $_POST["mobile"]; ?>
+              <?php echo $_POST["mobile1"]; ?>&nbsp;<?php echo $_POST["mobile2"]; ?>&nbsp;<?php echo $_POST["mobile3"]; ?>
             </td>
           </tr>
           <tr>

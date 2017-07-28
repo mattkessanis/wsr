@@ -13,8 +13,10 @@
             <input type="text" class="form-control" name="designation" id="designation" placeholder="Designation">
         </div>
         <div class="form-group">
-            <label for="mobile">Mobile:</label>
-            <input type="number" class="form-control" name="mobile" id="mobile" placeholder="0400 000 000" >
+            <label for="mobile">Mobile:</label><br/>
+            <input type="number" class="form-control mobile" name="mobile1" id="mobile1" placeholder="0400" min="0" max="9999" >
+            <input type="number" class="form-control mobile" name="mobile2" id="mobile2" placeholder="000" min="0" max="999">
+            <input type="number" class="form-control mobile" name="mobile3" id="mobile3" placeholder="000" min="0" max="999" >
         </div>
         <div class="form-group">
             <label for="mobile">Email:</label>
