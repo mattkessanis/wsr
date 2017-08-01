@@ -4,6 +4,14 @@ $('.img-hover-inner').hover(
   }
 );
 
+// $(document).ready(function(){
+//     $('#team-2016').hide();
+//     $('#team-2015').hide();
+    
+
+// });
+
+
 function initMap() {
   var shed = {
      lat: -33.771073,
@@ -144,5 +152,88 @@ function initMap() {
     icon: image,
     animation: google.maps.Animation.DROP
   });
+
+}
+
+
+function showyear(year, page) {
+  if (year == 2015||2016||2017 && page == 'team') {
+    if(year == 2016) {
+      $('#team-2017').addClass('hidden');
+      $('#team-2015').addClass('hidden');
+      $('#team-2016').removeClass('hidden');
+    }
+        
+    if(year == 2015) {
+      $('#team-2017').addClass('hidden');
+      $('#team-2016').addClass('hidden');
+      $('#team-2015').removeClass('hidden');
+    }
+        
+    if(year == 2017) {
+      $('#team-2016').addClass('hidden');
+      $('#team-2015').addClass('hidden');
+      $('#team-2017').removeClass('hidden');
+    }
+  } 
+  if (year == 2015||2016||2017 && page == 'car') {
+    if(year == 2016) {
+      $('#car-2017').addClass('hidden');
+      $('#car-2015').addClass('hidden');
+      $('#car-2016').removeClass('hidden');
+    }
+
+    if(year == 2017) {
+      $('#car-2016').addClass('hidden');
+      $('#car-2015').addClass('hidden');
+      $('#car-2017').removeClass('hidden');
+    }
+
+    if(year == 2015) {
+      $('#car-2016').addClass('hidden');
+      $('#car-2017').addClass('hidden');
+      $('#car-2015').removeClass('hidden');
+    }
+  }
+
+  if (year == 2015||2016||2017 && page == 'sponsors') {
+    if(year == 2015) {
+      $('#sponsors-2016').addClass('hidden');
+      $('#sponsors-2017').addClass('hidden');
+      $('#sponsors-2015').removeClass('hidden');
+    }
+
+    if(year == 2016) {
+      $('#sponsors-2017').addClass('hidden');
+      $('#sponsors-2015').addClass('hidden');
+      $('#sponsors-2016').removeClass('hidden');
+    }
+
+    if(year == 2017) {
+      $('#sponsors-2016').addClass('hidden');
+      $('#sponsors-2015').addClass('hidden');
+      $('#sponsors-2017').removeClass('hidden');
+    }
+  }
+
+  if (year == 2015||2016||2017 && page == 'news') {
+    if(year == 2015) {
+      $('#news-2016').addClass('hidden');
+      $('#news-2017').addClass('hidden');
+      $('#news-2015').removeClass('hidden');
+    }
+
+    if(year == 2016) {
+      $('#news-2017').addClass('hidden');
+      $('#news-2015').addClass('hidden');
+      $('#news-2016').removeClass('hidden');
+    }
+
+    if(year == 2017) {
+      $('#news-2016').addClass('hidden');
+      $('#news-2015').addClass('hidden');
+      $('#news-2017').removeClass('hidden');
+    }
+  }
 
 }

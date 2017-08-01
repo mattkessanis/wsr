@@ -10,14 +10,13 @@
       <a href="http://www.toyota.com.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/toyota.png" /></a>
       <a href="http://www.bosch.com.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/bosch.png" /></a>
       <a href="http://www.defencejobs.gov.au/" target="_blank"><img class="footer-sponsor-logos" src="assets/images/sponsors/defence.png" /></a>
-      <div class="site-by">
+    </div>
+    <div class="footer-line"></div>
+    <div class="site-by text-center">
         <p>
-          <a href="http://iamkewal.com" target="_blank">Site by Kewal</a>
+           &copy; 2017 Western Sydney Racing | <a href="http://iamkewal.com" target="_blank">Site by Kewal <span class="glyphicon glyphicon-new-window"></span></a>
         </p>
       </div>
-    </div>
-
-
     </div>
   </footer>
 

@@ -107,8 +107,8 @@ footer {
   margin-top: 15px;
 }
 .car-img {
-  max-width: 100%;
-  height:auto;
+  width: 100%;
+  height:100%;
 }
 .car-title {
   color: #991633;
@@ -288,6 +288,7 @@ li.active.form-tab {
   filter: grayscale(100%);
   transition: filter 300ms;
   width: 180px;
+  height: 100%;
 }
 
 .sponsor-img:hover {
@@ -420,15 +421,21 @@ li.active:hover {
   transition: filter 300ms;
 }
 .site-by {
-  float: right;
-  font-size: 10px;
+  height: 18px;
+  font-size: 9px;
   margin: 0;
-  padding: 18px 5px 8px 5px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background: #fff;
+  padding: 2px;
+  background: rgba(0,0,0,0.7);
+  color: #f7f7f7;
 }
+.site-by p {
+  margin: 0;
+}
+
+.site-by a {
+  color: #f7f7f7;
+}
+
 .news-container {
   padding-bottom: 100px;
 }
@@ -452,7 +459,8 @@ li.active:hover {
   padding: 10px;
 }
 .news-img {
-  max-width:270px;
+  width:270px;
+  height: 100%;
 }
 .news-img-k {
   max-width:370px;
@@ -510,11 +518,12 @@ li.active:hover {
   width: 200px;
   display: inline-block;
   margin: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .team-img {
   width: 100%;
+  height:100%;
 }
 
 .team-caption-wrapper {
@@ -588,7 +597,7 @@ li.active:hover {
 }
 
 .mobile {
-  max-width: 100px;
+  max-width: 70px;
   display: inline-block;
 }
 
@@ -596,4 +605,9 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+.year-glyph {
+  margin-left: 5px;
+  margin-right: 5px;
 }

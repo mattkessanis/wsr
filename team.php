@@ -1,11 +1,11 @@
 <?php $page_title = 'Western Sydney Racing: Team'; include 'includes/header.php'; ?>
 <?php $page_name = "team"; include 'includes/navbar.php'; ?>
   <div class="container-fluid team-container text-center">
-    
+      
         
         <div id="team-2017" class="team-div">
           <div class="sub-headings team-heading">
-            <h4 class="sub-headings-text text-center">2017 TEAM</h4>
+            <span class="glyphicon glyphicon-circle-arrow-left year-glyph" onclick="showyear(2016,'team')"></span><h4 class="sub-headings-text text-center">2017 TEAM</h4>
           </div>
           <div class="team-wrapper" >
             <img class="team-img" src="assets/images/team/team1.jpg" />
@@ -22,11 +22,18 @@
               <p class="team-designation">Design Engineer</p>
             </div>
           </div>
+          <div class="team-wrapper" data-toggle="modal" data-target="#myModal">
+            <img class="team-img " src="assets/images/team/team2.jpg" />
+            <div class="team-caption-wrapper">
+              <p class="team-img-caption">Jane Doe</p>
+              <p class="team-designation">Design Engineer</p>
+            </div>
+          </div>
 
         </div>
-        <div id="team-2016" class="team-div">
+        <div id="team-2016" class="team-div hidden">
           <div class="sub-headings team-heading">
-            <h4 class="sub-headings-text text-center">2016 TEAM</h4>
+            <span class="glyphicon glyphicon-circle-arrow-left year-glyph" onclick="showyear(2015,'team')"></span><h4 class="sub-headings-text text-center">2016 TEAM</h4><span class="glyphicon glyphicon-circle-arrow-right year-glyph" onclick="showyear(2017,'team')"></span>
           </div>
           <div class="team-wrapper" >
             <img class="team-img" src="assets/images/team/team1.jpg" />
@@ -42,16 +49,37 @@
               <p class="team-designation">Design Engineer</p>
             </div>
           </div>
+          <div class="team-wrapper" data-toggle="modal" data-target="#myModal">
+            <img class="team-img " src="assets/images/team/team2.jpg" />
+            <div class="team-caption-wrapper">
+              <p class="team-img-caption">Jane Doe</p>
+              <p class="team-designation">Design Engineer</p>
+            </div>
+          </div>
+          <div class="team-wrapper" data-toggle="modal" data-target="#myModal">
+            <img class="team-img " src="assets/images/team/team2.jpg" />
+            <div class="team-caption-wrapper">
+              <p class="team-img-caption">Jane Doe</p>
+              <p class="team-designation">Design Engineer</p>
+            </div>
+          </div>
         </div>
-        <div id="team-2015" class="team-div">
+        <div id="team-2015" class="team-div hidden">
           <div class="sub-headings team-heading">
-            <h4 class="sub-headings-text text-center">2015 TEAM</h4>
+            <h4 class="sub-headings-text text-center">2015 TEAM</h4><span class="glyphicon glyphicon-circle-arrow-right year-glyph" onclick="showyear(2016,'team')"></span>
           </div>
           <div class="team-wrapper" >
             <img class="team-img" src="assets/images/team/team1.jpg" />
             <div class="team-caption-wrapper lead-caption-wrapper">
               <p class="team-img-caption  white-caption">John Doe</p>
               <p class="team-designation  white-caption">Team Lead<p>
+            </div>
+          </div>
+          <div class="team-wrapper" data-toggle="modal" data-target="#myModal">
+            <img class="team-img " src="assets/images/team/team2.jpg" />
+            <div class="team-caption-wrapper">
+              <p class="team-img-caption">Jane Doe</p>
+              <p class="team-designation">Design Engineer</p>
             </div>
           </div>
           <div class="team-wrapper" data-toggle="modal" data-target="#myModal">
