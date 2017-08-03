@@ -1,0 +1,80 @@
+// INSERT ROW -------------------------------------------------------------------------
+
+
+function addRow(id) {
+	var tr 			= document.getElementById(id);
+	var table 		= document.getElementById('EditTable');
+	var tbody		= document.getElementById('EditTbody');
+	var lastRow 	= tbody.rows.length - 1;
+	var lastRowId 	= tbody.rows[lastRow].id;
+	
+	document.getElementById('EditTbody').rows.length;
+	document.getElementById('EditTbody').rows.length - 1;
+	document.getElementById('EditTbody').rows[document.getElementById('EditTbody').rows.length - 1].id;
+	
+	var cellcount	= table.rows[0].cells.length;
+	var lastRow 	= tbody.rows.length - 1;
+
+	
+	if (id == 'append') {
+		// Add row to end
+		var newRow   = tbody.insertRow(tbody.rows.length);
+		var newCell  = newRow.insertCell(0);
+		//var newText  = document.createTextNode('New row');
+		newCell.appendChild(newText);
+
+	}
+	else if (isNumeric(id)) {
+		// Insert row
+	}
+	
+	
+			<tr id="74" class="database">
+				<td class="database">74</td>
+				<td id="74.Language" class="database" onClick="addInput(this)"></td>
+				<td id="74.Change" class="database" onClick="addInput(this)"></td>
+				<td id="74.ChangeType" raw="" class="database" onClick="showOptions(this)"></td>
+				<td id="74.Domain" raw="" class="database" onClick="showOptions(this)"></td>
+				<td id="74.When" class="database" onClick="addInput(this)"></td>
+				<td id="74.Certainty" class="database" onClick="showCertaintyBtns(this);"></td>
+				<td id="74.EvidenceType" raw="" class="database" onClick="showOptions(this)"></td>
+				<td id="74.Reference" class="database" onClick="addInput(this)"></td>
+				<td id="74.Notes" class="database" onClick="addInput(this)"></td>
+				<td class="database"><a style="" href="#" onClick="addRow('74')">Insert</a></td>
+				<td class="database"><a style="" href="#" onClick="deleteRow('74')">Delete</a></td>
+			</tr>
+	
+	
+	// Table
+	var tableRef = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+
+	// Insert a row in the table at the last row
+	var newRow   = tableRef.insertRow(tableRef.rows.length);
+
+	// Insert a cell in the row at index 0
+	var newCell  = newRow.insertCell(0);
+
+	// Append a text node to the cell
+	var newText  = document.createTextNode('New row');
+	newCell.appendChild(newText);
+	
+	
+	
+		var tbody = document.getElementById('item_list').tBodies[0];  
+		var lastRow = tbody.rows.length - 1;  
+		var rowId = lastRow;
+		var row = document.createElement('tr'); 
+		row.setAttribute('id', rowId); 
+// INSERT CELLS HERE
+		tbody.appendChild(row);  
+		++rowId;  
+	
+	
+	
+	
+	
+	
+	var tr = document.getElementById(id);
+	
+	$.post( "manage.newrecord.php", {table: urlParams["table"], row: id});
+}

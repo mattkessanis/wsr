@@ -1,0 +1,47 @@
+.text-input-hint {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin: 0 0 0 8px;
+  padding: 4px 8px 5px;
+  min-width: 140px;
+  line-height: $textInputHeight - 11px;
+  font-size: $fontSize - 1px;
+  text-shadow: 0 1px rgba(black, .8);
+  background: #33373c;
+  background-clip: padding-box;
+  border: 1px solid #111;
+  border-bottom-color: black;
+  border-radius: 3px;
+  @include linear-gradient(top, rgba(white, .07),
+                                rgba(white, 0) 50%,
+                                rgba(black, 0) 51%,
+                                rgba(black, .2));
+  @include box-shadow(inset 0 1px rgba(white, .1),
+                      0 1px 1px rgba(black, .15));
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -4px 0 0 -4px;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 4px 4px 4px 0;
+    border-right-color: #33373c;
+  }
+
+  &:before {
+    margin-left: -5px;
+    border-right-color: black;
+  }
+
+  .valid & { background-color: #396330; }
+  .valid &:after { border-right-color: #396330; }
+
+  .invalid & { background-color: #8d2e2b; }
+  .invalid &:after { border-right-color: #8d2e2b; }
+}

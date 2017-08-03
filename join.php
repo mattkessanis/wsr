@@ -1,11 +1,11 @@
 <?php
   //** ------------------------------------ Page variables ---------------------------------------------- **//
-  $prefix = "includes/backend/";
+  $prefix = 'includes/backend/';
   $page_title = 'Western Sydney Racing: Join';
-  $page_name = "contact";
+  $page_name = 'contact';
 
   //** ------------------------------------ Page includes ----------------------------------------------- **//
-  include "includes/protected/config.php";
+  include 'includes/protected/config.php';
   include 'includes/header.php';
   include 'includes/navbar.php';
 

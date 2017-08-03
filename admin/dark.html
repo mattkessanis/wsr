@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Dark UI</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+  <div class="demo">
+    <div class="demo-left">
+      <p>
+        <input type="submit" value="Submit" class="button">
+        <button class="button focus">Submit</button>
+        <a href="#" class="button active">Submit</a>
+        <a href="#" class="button button-round">Update</a>
+      </p>
+
+      <p>
+        <a href="#" class="button button-blue">Download</a>
+        <a href="#" class="button button-green">Create</a>
+        <a href="#" class="button button-red">Delete</a>
+        <a href="#" class="button button-purple">Refresh</a>
+      </p>
+
+      <div class="button-group">
+        <a href="#" class="button">Account</a>
+        <a href="#" class="button active">Profile</a>
+        <a href="#" class="button">Apps</a>
+      </div>
+
+      <div class="button-dropdown open">
+        <a href="#" class="button">Dropdown</a>
+        <a class="button toggle">More</a>
+        <ul class="dropdown">
+          <li><a href="#">Copy</a></li>
+          <li><a href="#">Paste</a></li>
+        </ul>
+      </div>
+
+      <div class="button-group">
+        <a href="#" class="button button-prev">Previous</a>
+        <a href="#" class="button button-next">Next</a>
+      </div>
+
+      <p class="demo-tags">
+        <a href="#" class="tag tag-teal">HTML5</a>
+        <a href="#" class="tag tag-blue">CSS3</a>
+      </p>
+
+      <div class="heading">
+        <h2>Heading</h2>
+        <ul class="heading-links">
+          <li><a href="#" class="heading-link">Edit</a></li>
+          <li><a href="#" class="heading-link">Delete</a></li>
+        </ul>
+      </div>
+
+      <p class="alert notice">
+        <strong>Done!</strong> You successfully completed this project.
+        <a href="#" class="alert-close">&times;</a>
+      </p>
+
+      <p class="alert">
+        <strong>Oops!</strong> Something is technically wrong.
+        <a href="#" class="alert-close">&times;</a>
+      </p>
+    </div>
+
+    <div class="demo-center">
+      <p>
+        <input type="text" placeholder="Placeholder…">
+        <span class="text-input-hint">Let's do it.</span>
+      </p>
+
+      <p class="valid">
+        <input type="text" value="valid@email.com">
+        <span class="text-input-hint">Good job!</span>
+      </p>
+
+      <p class="invalid">
+        <input type="text" value="invalid email">
+        <span class="text-input-hint">Invalid…</span>
+      </p>
+
+      <p>
+        <textarea autofocus></textarea>
+      </p>
+
+      <p class="search">
+        <input type="search">
+      </p>
+    </div>
+
+    <div class="demo-right">
+      <p class="demo-switches">
+        <span class="switch">
+          <input type="checkbox" id="s1">
+          <label for="s1"></label>
+        </span>
+
+        <span class="switch switch-square">
+          <input type="checkbox" id="s2">
+          <label for="s2" data-on="On" data-off="Off"></label>
+        </span>
+
+        <span class="switch">
+          <input type="checkbox" id="s3" checked>
+          <label for="s3"></label>
+        </span>
+
+        <span class="switch switch-square">
+          <input type="checkbox" id="s4" checked>
+          <label for="s4" data-on="On" data-off="Off"></label>
+        </span>
+      </p>
+
+      <p class="demo-options">
+        <label class="option">
+          <input type="checkbox">
+          <span class="checkbox"></span>
+        </label>
+
+        <label class="option">
+          <input type="checkbox" class="focus">
+          <span class="checkbox"></span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="radio1">
+          <span class="radio"></span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="radio2" class="focus">
+          <span class="radio"></span>
+        </label>
+      </p>
+
+      <p class="demo-options">
+        <label class="option">
+          <input type="checkbox" checked>
+          <span class="checkbox"></span>
+        </label>
+
+        <label class="option">
+          <input type="checkbox" checked>
+          <span class="checkbox blue"></span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="radio1" checked>
+          <span class="radio"></span>
+        </label>
+
+        <label class="option">
+          <input type="radio" name="radio2" checked>
+          <span class="radio blue"></span>
+        </label>
+      </p>
+
+      <div class="select">
+        <select>
+          <option selected>Select…</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
+      </div>
+
+      <div class="progress">
+        <span style="width: 33%"></span>
+      </div>
+
+      <div class="progress progress-square progress-blue">
+        <span style="width: 66%"></span>
+      </div>
+
+      <hr class="hr">
+    </div>
+
+    <table class="table">
+      <thead class="table-head">
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Views</th>
+        </tr>
+      </thead>
+      <tbody class="table-body">
+        <tr>
+          <td>1</td>
+          <td>Lorem ipsum dolor sit amet</td>
+          <td>Published</td>
+          <td>4216</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Consectetur adipiscing elit</td>
+          <td>Draft</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Integer molestie lorem at massa</td>
+          <td>Published</td>
+          <td>2315</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

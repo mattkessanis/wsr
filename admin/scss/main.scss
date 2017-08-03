@@ -1,0 +1,39 @@
+$fontFamily: 'Lucida Grande', Verdana, Arial, sans-serif;
+$fontSize: 12px;
+$lineHeight: 21px;
+$textColor: #dfdfdf;
+
+@import 'mixins',
+        'reset',
+        'normalize';
+
+body {
+  font: #{$fontSize}/#{$lineHeight} $fontFamily;
+  color: $textColor;
+  background: #3c3b40;
+}
+
+a {
+  color: #eee;
+  text-decoration: underline;
+
+  &:hover { color: white; }
+}
+
+@import 'text-inputs',
+        'text-input-hints',
+        'search-inputs',
+        'option-inputs',
+        'selects',
+        'switches',
+        'validation',
+        'buttons',
+        'button-groups',
+        'button-dropdowns',
+        'pager-buttons',
+        'headings',
+        'tags',
+        'alerts',
+        'tables',
+        'progress-bars',
+        'horizontal-lines';

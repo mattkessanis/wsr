@@ -1,0 +1,42 @@
+SELECT table_name, column_name
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE table_schema = 'YourDBName'
+    ORDER BY table_name, ordinal_position
+
+SELECT 
+TABLE_NAME as table_name, 
+COLUMN_NAME as column_name, 
+COLUMN_TYPE as data_type, 
+COLUMN_DEFAULT as default_value, 
+IS_NULLABLE as nullable,
+COLUMN_KEY as constraints, 
+EXTRA as constraints2, 
+CHARACTER_SET_NAME as charset, 
+COLLATION_NAME as collation 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE table_schema = '<YOUR_DATABASE_NAME>' 
+AND TABLE_NAME='<YOUR_TABLE_NAME>' 
+ORDER BY table_name, ordinal_position
+
+
+SELECT * 
+FROM information_schema.tables t
+JOIN information_schema.columns c ON t.TABLE_NAME = c.TABLE_NAME 
+ AND t.TABLE_CATALOG=c.TABLE_CATALOG 
+ AND t.TABLE_SCHEMA=c.TABLE_SCHEMA
+ 
+ 
+ 
+ <table class="table">
+				<thead class="table-head">
+					<tr>
+						<th>Available Schemas</th>
+					</tr>
+				</thead>
+				<tbody class="table-body">
+					<tr>
+						<td> CONTENT
+						</td>
+					</tr>
+				</tbody>
+			</table>

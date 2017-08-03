@@ -1,0 +1,65 @@
+<?php
+															/*
+ * Grammatical Changes Database
+ * Constructed by Matthew Kessanis, for Rachel Hendery
+
+ * Record edit agent for database management - Version 3.05
+ * <domain>/manage.edit.php
+															*/
+
+	// SET UP DYNAMIC REFERENCE
+	$internal = realpath(__DIR__).DIRECTORY_SEPARATOR;
+	if (dirname($_SERVER['ORIG_PATH_INFO']) == "\\") {
+		$external = "http://".$_SERVER['HTTP_HOST']."/";
+	}
+	else {
+		$external = "http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['ORIG_PATH_INFO'])."/";
+	}
+
+	// ACCESS THE SERVER
+	include $internal.'config.php';
+	
+
+	// PARAMETERS:
+	// table, row, col, newvalue
+	if ( isset($_POST['table'], $_POST['row'], $_POST['col'], $_POST['newvalue'] )) {
+		if ( is_numeric( $_POST['row'] ) ) {
+			$table 		= $_POST['table'];
+			$row 		= $_POST['row'];
+			$col 		= $_POST['col'];
+			$newvalue 	= $_POST['newvalue'];
+			$oldvalue	= $_POST['oldvalue'];
+			$timestamp 	= date('[Y m d G:i:s]');
+
+			if ($table == '' || $row == '' || $col == '') {
+				$error = 'ERROR: Please fill in all required fields!';
+			}
+			else {
+				$historyfile = "manage.history.txt";
+				$handle = fopen($historyfile, 'a') or die("Cannot open file:  ".$historyfile);
+				$data = "\nMODIFIED\t".$table."\t".$row."\t".$col."\t".$timestamp."\nOLD:\t".$oldvalue."\nNEW:\t".$newvalue."\n";
+				fwrite($handle, $data);
+				fclose($handle);
+			
+				if ($stmt = $mysqli->prepare("UPDATE " . $table . " SET `" . $col . "` = ? WHERE ID=?")) {
+					$stmt->bind_param("si", $newvalue, $row);
+					$stmt->execute();
+				}
+				else {
+					//echo "ERROR: Could not prepare SQL statement. NEW RECORD.";
+				}
+			}
+		}
+		else {
+			//echo "Error! Key is not a number!";
+		}
+	}
+	else {
+		//echo "Error! Arguments not set!";
+	}
+?>
+
+
+
+
+

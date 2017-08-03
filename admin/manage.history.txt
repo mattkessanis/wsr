@@ -1,0 +1,63 @@
+MODIFIED	changes_grammatical	1	Certainty	[2017 02 19 14:21:20]
+OLD:	3
+NEW:	0
+
+DELETED	changes_grammatical	8	[2017 02 19 14:22:05]
+
+NEW_RECORD	changes_grammatical	59	[2017 02 19 15:36:33]
+
+NEW_RECORD	changes_grammatical	55	[2017 02 19 15:37:08]
+
+NEW_RECORD	changes_grammatical	50	[2017 02 19 15:37:29]
+
+NEW_RECORD	changes_grammatical	62	[2017 02 19 15:38:21]
+
+NEW_RECORD	changes_grammatical	47	[2017 02 19 15:40:07]
+
+NEW_RECORD	changes_grammatical	50	[2017 02 19 15:41:13]
+
+NEW_RECORD	changes_grammatical	45	[2017 02 19 15:41:19]
+
+NEW_RECORD	changes_grammatical	45	[2017 02 19 15:42:15]
+
+NEW_RECORD	changes_grammatical	51	[2017 02 19 15:42:47]
+
+NEW_RECORD	changes_grammatical	42	[2017 02 19 15:43:19]
+
+NEW_RECORD	changes_grammatical	50	[2017 02 19 15:45:03]
+
+NEW_RECORD	changes_grammatical	46	[2017 02 19 15:47:53]
+
+NEW_RECORD	changes_grammatical	64	[2017 02 19 15:48:39]
+
+NEW_RECORD	changes_grammatical	64	[2017 02 19 15:51:05]
+
+NEW_RECORD	changes_grammatical	64	[2017 02 19 15:52:33]
+
+NEW_RECORD	changes_grammatical	64	[2017 02 19 15:54:43]
+
+NEW_RECORD	changes_grammatical	64	[2017 02 19 15:56:13]
+
+MODIFIED	changes_grammatical	39	ChangeType	[2017 02 19 16:57:31]
+OLD:	undefined
+NEW:	false,true,false,false,false,false,false,false,false,false@Loss
+
+MODIFIED	changes_grammatical	74	ChangeType	[2017 02 19 18:05:52]
+OLD:	undefined
+NEW:	false,false,false,false,false,false,false,false,false,false@
+
+NEW_RECORD	changes_grammatical	75	[2017 02 19 18:06:59]
+
+MODIFIED	changes_grammatical	60	EvidenceType	[2017 02 19 18:17:10]
+OLD:	undefined
+NEW:	false,true,false,false@Reconstruction
+
+DELETED	changes_grammatical	73	[2017 02 19 18:17:27]
+
+DELETED	changes_grammatical	74	[2017 02 19 18:17:29]
+
+NEW_RECORD	changes_grammatical	9	[2017 02 19 18:30:17]
+
+MODIFIED	changes_grammatical	25	Change	[2017 02 23 9:34:11]
+OLD:	preverbal stap marker used for habitual and progressive
+NEW:	geheheh

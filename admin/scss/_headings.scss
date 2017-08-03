@@ -1,0 +1,58 @@
+$headingHeight: 32px;
+
+.heading {
+  overflow: hidden;
+  line-height: $headingHeight - 2px;
+  padding: 0 floor($headingHeight * .35);
+  text-shadow: 0 1px rgba(black, .8);
+  background: #1d619f;
+  background-clip: padding-box;
+  border: 1px solid #111;
+  border-bottom-color: black;
+  border-radius: 3px;
+  @include linear-gradient(top, #297ab8, #15528f);
+  @include box-shadow(inset 0 1px rgba(white, .1),
+                      inset 0 0 0 1px rgba(white, .05),
+                      0 1px 2px rgba(black, .15));
+
+  > h2 {
+    float: left;
+    font-size: $fontSize + 1px;
+    font-weight: bold;
+    color: lighten($textColor, 5%);
+  }
+}
+
+.heading-links {
+  float: right;
+  margin: 0 -#{floor($headingHeight * .35)} 0 floor($headingHeight * .35);
+
+  > li {
+    float: left;
+    border-left: 1px solid #0a2032;
+    border-left-color: rgba(black, .7);
+    @include box-shadow(inset 1px 0 rgba(white, .07),
+                        -1px 0 rgba(white, .07));
+  }
+}
+
+.heading-link {
+  display: block;
+  color: $textColor;
+  padding: 0 floor($headingHeight * .4);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background: #1d6eb9;
+    background: rgba(white, .08);
+  }
+
+  &:active {
+    color: rgba($textColor, .8);
+    text-shadow: 0 1px rgba(black, .5);
+    background: #104c88;
+    @include box-shadow(inset 0 1px 2px rgba(black, .3));
+  }
+}

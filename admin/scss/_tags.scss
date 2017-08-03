@@ -1,0 +1,68 @@
+$tagHeight: 24px;
+$tagHoleSize: 4px;
+$tagColors: blue #125b76, teal #13715e;
+
+.tag {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-bottom: 1px;
+  padding: 0 floor($tagHeight * .35) 1px floor($tagHeight * .7) + $tagHoleSize + 2px;
+  line-height: $tagHeight - 3px;
+  font-size: $fontSize - 1px;
+  color: #ddd;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(black, .8);
+  background: #464a4f;
+  background-clip: padding-box;
+  border: 1px solid #111;
+  border-bottom-color: black;
+  border-radius: 3px;
+  @include linear-gradient(top, rgba(white, .08),
+                                rgba(white, 0) 50%,
+                                rgba(black, 0) 51%,
+                                rgba(black, .25));
+  @include box-shadow(inset 0 1px rgba(white, .1),
+                      inset 0 -1px 3px rgba(black, .3),
+                      inset 0 0 0 1px rgba(white, .08),
+                      0 1px 2px rgba(black, .15));
+
+  &:hover,
+  &:focus {
+    color: #ddd;
+    background-color: #4f545a;
+    outline: none;
+  }
+
+  &:active {
+    margin-top: 1px;
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: round($tagHeight / 2 - $tagHoleSize / 2) - 2px;
+    left: round($tagHeight / 2 - $tagHoleSize / 2) - 2px;
+    width: $tagHoleSize;
+    height: $tagHoleSize;
+    background: #3c3b40;
+    border: 1px solid black;
+    border-radius: ceil($tagHoleSize / 2) + 1px;
+    @include box-shadow(inset 0 1px rgba(black, .2),
+                        0 1px rgba(white, .2));
+  }
+}
+
+
+@each $pair in $tagColors {
+  .tag-#{nth($pair, 1)} {
+    $color: nth($pair, 2);
+    background-color: $color;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($color, 5%);
+    }
+  }
+}

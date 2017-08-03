@@ -1,0 +1,29 @@
+$buttonGroupHeight: 32px;
+
+.button-group {
+  display: inline-block;
+  vertical-align: top;
+  height: $buttonGroupHeight;
+  font-size: 0;
+  white-space: nowrap;
+
+  > .button {
+    margin-left: -1px;
+    height: inherit;
+    line-height: $buttonGroupHeight - 2px;
+    padding: 0 floor($buttonGroupHeight / 2);
+    border-radius: 0;
+
+    &:first-child {
+      margin-left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    &:last-child { border-radius: 0 3px 3px 0; }
+
+    &:focus {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.valid {
+  position: relative;
+
+  > input {
+    color: #b7beb7;
+    background: #22331f;
+  }
+}
+
+.invalid {
+  position: relative;
+
+  > input {
+    color: #c6b5bc;
+    background: #512724;
+  }
+}

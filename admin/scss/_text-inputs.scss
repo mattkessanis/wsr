@@ -1,0 +1,43 @@
+$textInputHeight: 29px;
+$textareaLineHeight: 19px;
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=search],
+textarea {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 floor($textInputHeight * .25);
+  height: $textInputHeight;
+  color: darken($textColor, 15%);
+  text-shadow: 0 1px rgba(black, .5);
+  background: #333;
+  border: 1px solid #111;
+  border-top-color: black;
+  border-radius: 3px;
+  @include box-shadow(inset 0 1px 1px rgba(black, .2),
+                      0 1px rgba(white, .08));
+  @include transition(.1s ease-out);
+
+  &:focus {
+    color: $textColor;
+    background: #3d3d3d;
+    outline: none;
+  }
+}
+
+textarea {
+  padding: floor($textareaLineHeight * .25) floor($textInputHeight * .25);
+  height: $textareaLineHeight * 3 + floor($textareaLineHeight * .25) * 2 + 2px;
+  line-height: $textareaLineHeight;
+  overflow: auto;
+  resize: none;
+}
+
+:-moz-placeholder { color: #808080 !important; }
+::-moz-placeholder { color: #808080 !important; opacity: 1; }
+::-webkit-input-placeholder { color: #808080; }
+:-ms-input-placeholder { color: #808080; }
+
+.lt-ie9 input { line-height: $textInputHeight - 2px; } // IE 8

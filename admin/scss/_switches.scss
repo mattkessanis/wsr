@@ -1,0 +1,137 @@
+$switchWidth: 32px;
+$switchHeight: 13px;
+
+$switchSquareWidth: 58px;
+$switchSquareHeight: 23px;
+
+.switch {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: $switchWidth;
+  @include user-select(none);
+
+  > label {
+    display: block;
+    position: relative;
+    height: $switchHeight;
+    background: #333;
+    border: 1px solid #111;
+    border-top-color: black;
+    border-radius: ceil($switchHeight / 2);
+    @include box-shadow(inset 0 1px 1px rgba(black, .2),
+                        0 1px rgba(white, .08));
+    @include transition(.15s ease-out);
+
+    &:before {
+      content: '';
+      display: block;
+      margin: -3px 0 0 -3px;
+      width: $switchHeight + 2px;
+      height: $switchHeight + 2px;
+      background: #464a4f;
+      border: 1px solid #111;
+      border-bottom-color: black;
+      border-radius: ceil($switchHeight / 2) + 2px;
+      @include linear-gradient(top, #50545b, #35383d);
+      @include box-shadow(inset 0 1px rgba(white, .08),
+                          inset 0 0 0 1px rgba(white, .08),
+                          inset 0 -1px 2px rgba(black, .25),
+                          0 1px 2px rgba(black, .1));
+    }
+  }
+
+  > input {
+    position: absolute;
+    z-index: 0;
+    top: 2px;
+    left: 2px;
+    width: $switchWidth - 4px;
+    height: $switchHeight - 4px;
+    padding: 0;
+    opacity: 0;
+    -webkit-appearance: none;
+
+    &:focus {
+      opacity: 1;
+      outline: 1px solid #236eab;
+      outline-offset: 4px;
+    }
+  }
+
+  > input:checked + label {
+    padding-left: $switchWidth - $switchHeight;
+    background: #2265a1;
+    @include linear-gradient(top, #1e5f9d, #2972a9);
+  }
+}
+
+.switch-square {
+  width: $switchSquareWidth;
+
+  > label {
+    height: $switchSquareHeight;
+    line-height: $switchSquareHeight - 3px;
+    font-size: 10px;
+    color: #888;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 1px rgba(black, .4);
+    border-radius: 2px;
+
+    &:before {
+      margin: -1px 0 0 -1px;
+      width: floor($switchSquareWidth / 2) - 3px;
+      height: $switchSquareHeight - 2px;
+      border-radius: 2px;
+    }
+
+    &:after {
+      content: attr(data-off);
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: floor($switchSquareWidth / 2);
+    }
+  }
+
+  > input {
+    width: $switchSquareWidth - 4px;
+    height: $switchSquareHeight - 4px;
+  }
+
+  > input:checked + label {
+    padding-left: floor($switchSquareWidth / 2) + 1px;
+
+    &:after {
+      content: attr(data-on);
+      left: 0;
+      color: #cfdbe2;
+    }
+  }
+}
+
+// IE 8 doesn't support the :checked selector — revert to native inputs
+
+.lt-ie9 {
+  .switch {
+    width: $switchWidth - 2px;
+    height: $switchHeight - 2px;
+    background: #333;
+    border: 1px solid black;
+
+    > label { display: none; }
+
+    > input {
+      position: static;
+      width: inherit;
+      height: inherit;
+      vertical-align: top;
+    }
+  }
+
+  .switch-square {
+    width: $switchSquareWidth - 2px;
+    height: $switchSquareHeight - 2px;
+  }
+}

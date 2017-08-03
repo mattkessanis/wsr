@@ -1,0 +1,102 @@
+			<?php
+			// Database List
+	    	if( $result = $mysqli->query("SELECT TABLE_SCHEMA, TABLE_NAME FROM INFORMATION_SCHEMA.TABLES") ) {
+				while ( $row = $result->fetch_assoc() ) {
+					foreach ($row as $key => $data) {
+						echo '<tr>';
+						echo '<td>'.$key.' ---';
+						echo ' '.$data.'</td>';
+						echo '</tr>';
+
+						//echo "\n\t\t\t\t\t";
+						//echo '</td>';
+						//echo "\n\t\t\t\t";
+						//echo '</tr>';
+					}
+				
+				}
+
+			}	
+			else {
+				// if there are no records in the database, display an alert message
+				echo ' [!] ERROR: No results to display. [!] <br>';
+			}
+
+			// CLOSE DATABASE CONNECTION
+			$mysqli->close();
+			
+			?>
+
+
+
+
+					echo "\n\t\t\t\t\t\t".'<ul>';
+
+
+
+	<ul class="treeView">
+        <li>
+          Collapsible lists
+          <ul class="collapsibleList">
+            <li>
+              Actions
+              <ul>
+                <li>
+                  Creation
+                  <ul>
+                    <li>apply()</li>
+                    <li class="lastChild">applyTo(node)</li>
+                  </ul>
+                </li>
+                <li class="lastChild">
+                  Toggling
+                  <ul>
+                    <li>Expanding/opening</li>
+                    <li class="lastChild">Collapsing/closing</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="lastChild">
+              Uses
+              <ul>
+                <li>Directory listings</li>
+                <li>Tree views</li>
+                <li class="lastChild">Outline views</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+	</ul>
+
+	  
+	  
+	echo '<!-- NEW ROW -->';
+  
+	  
+				// TABLE_SCHEMA		information_schema
+				// TABLE_NAME		SCHEMA_PRIVILEGES
+				// Array ( [TABLE_SCHEMA] => information_schema [TABLE_NAME] => SCHEMA_PRIVILEGES )
+				
+				
+
+				
+				// make the appropriate lists collapsible
+				//CollapsibleLists.apply();
+				
+				// make the list with the ID 'newList' collapsible
+				//CollapsibleLists.applyTo(document.getElementById('newList'));
+
+					  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  

@@ -1,0 +1,56 @@
+$searchInputHeight: 27px;
+$searchInputIconColor: #999;
+
+.search {
+  position: relative;
+
+  > input {
+    width: 100%;
+    height: $searchInputHeight;
+    padding: 0 floor($searchInputHeight * .45) 0 $searchInputHeight + 1px;
+    border-radius: ceil($searchInputHeight / 2);
+  }
+
+  &:before { // Circle
+    content: '';
+    position: absolute;
+    top: round($searchInputHeight / 2) - 7px;
+    left: round($searchInputHeight / 2) - 5px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid $searchInputIconColor;
+    border-radius: 7px;
+  }
+
+  &:after { // Line
+    content: '';
+    position: absolute;
+    top: round($searchInputHeight / 2) + 3px;
+    left: round($searchInputHeight / 2) + 2px;
+    width: 6px;
+    height: 2px;
+    background: $searchInputIconColor;
+    border-radius: 1px;
+    @include transform(rotate(45deg));
+  }
+}
+
+// Reset appearance of search inputs in WebKit
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+// IE 8 doesn't support CSS transforms — hide icon
+
+.lt-ie9 {
+  .search {
+    &:before, &:after { content: none; }
+    > input { padding: 0 floor($searchInputHeight * .25); }
+  }
+}

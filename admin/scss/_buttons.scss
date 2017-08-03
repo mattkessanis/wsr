@@ -1,0 +1,77 @@
+$buttonHeight: 32px;
+$buttonColors: blue #2265a1, green #3f7636, red #8d2d2b, purple #71428e;
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  height: $buttonHeight;
+  line-height: 1;
+  padding: 0 floor($buttonHeight * .4);
+  font-size: $fontSize;
+  color: #ddd;
+  text-align: center;
+  text-shadow: 0 1px rgba(black, .8);
+  background: #464a4f;
+  background-clip: padding-box;
+  border: 1px solid #111;
+  border-bottom-color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  @include box-sizing(border-box);
+  @include linear-gradient(top, rgba(white, .08),
+                                rgba(white, 0) 50%,
+                                rgba(black, 0) 51%,
+                                rgba(black, .25));
+  @include box-shadow(inset 0 1px rgba(white, .1),
+                      inset 0 -1px 3px rgba(black, .3),
+                      inset 0 0 0 1px rgba(white, .08),
+                      0 1px 2px rgba(black, .15));
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: #ddd;
+    background-color: #53585f;
+    outline: none;
+  }
+
+  &:active,
+  &.active {
+    color: #ccc;
+    background: #323538;
+    border-color: black #111 #111;
+    @include linear-gradient(top, rgba(black, .1),
+                                  transparent 50%,
+                                  rgba(white, .07));
+    @include box-shadow(inset 0 1px 2px rgba(black, .25),
+                        0 1px rgba(white, .08));
+  }
+}
+
+a.button {
+  line-height: $buttonHeight - 2px;
+  text-decoration: none;
+}
+
+.button-round {
+  padding: 0 floor($buttonHeight / 2);
+  border-radius: ceil($buttonHeight / 2);
+}
+
+@each $pair in $buttonColors {
+  .button-#{nth($pair, 1)} {
+    $color: nth($pair, 2);
+    background-color: $color;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: lighten($color, 5%);
+    }
+
+    &:active,
+    &.active {
+      background-color: darken($color, 8%);
+    }
+  }
+}
